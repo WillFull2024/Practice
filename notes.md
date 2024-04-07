@@ -4,6 +4,8 @@
             methods:
                 replace() //is a function
                 length //is an object
+                dataType.toString() converts any dataType to a string
+                split() // Converts string to array.  inside paranthesis goes what character to split at
 -        2. Numbers
 -        3. Arrays (also an abject )
 -        4. Objects  

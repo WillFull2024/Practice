@@ -17,6 +17,10 @@
     //console.log(xfactor)
     // return xfactor;
 // };
+
+//  Write a function called adder that accepts an array of numbers as an argument, 
+// and returns an array of each number adding 2 times the number to itself.  
+// If the imput array is empty, return a -1
 function adder(xtc){
     let temp = ["test",'just','peple','cars']
     console.log(temp)
@@ -36,6 +40,29 @@ console.log( adder([]) );
 // console.log([1,3,6,3,4,7,9])
 // console.log(multiplier([3,7,2,5,9,6]));
 
-//  Write a function called adder that accepts an array of numbers as an argument, 
-// and returns an array of each number adding 2 times the number to itself.  
-// If the imput array is empty, return a -1
+// For loops:
+// for (let i=0;i<100;i++); array[i] becomes element
+// for (let i of iterator)// i = element value
+// for (let i in objects)
+
+// write a function called createArray that accepts a number n. return an array of elements based on the number n that has the following:
+// the array will be the length range from 0 to n.
+// the element will be the product i*n in the range if i is even or
+// sum i+n if i is odd
+// example: assume n =5: aarArr1 = [0,1,2,3,4,5]
+function createArray(n){
+    let arrArr1 = []; // initalizing or declaring an array variable
+    for (let i=0;i <= n;i++){
+        // arrArr1.push(i);
+        if(i%2 === 0) {
+            arrArr1[i] = i*n;
+            // arrArr1.push(i*n);
+        } 
+        if (i%2 !== 0){
+            arrArr1.push(i+n);
+        }
+    }
+    return arrArr1;
+}
+
+console.log(createArray(2));
